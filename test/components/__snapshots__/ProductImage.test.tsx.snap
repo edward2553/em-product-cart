@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductImage to have the url passed and match the snapshot Debe de mostrar el componente correctamente con el nombre del producto 1`] = `
+<div
+  className="productCard undefined"
+>
+  <img
+    alt="Product"
+    className="productImg undefined"
+    src="./coffee-mug.png"
+  />
+</div>
+`;
+
+exports[`ProductImage to have the url passed and match the snapshot It should have the url passed by props 1`] = `
+<img
+  alt="Product"
+  className="productImg undefined"
+  src="./coffee-mug.png"
+/>
+`;
