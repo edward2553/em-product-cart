@@ -1,14 +1,14 @@
 import React from 'react';
 import { createContext } from 'react';
 import { useProducts } from '../hooks/useProducts';
-import { InitialValues, Product, ProductCartHandlers, ProductContextProps, onChangeArgs } from '../interfaces';
+import { InitialValues, Product, ProductCardHandlers, ProductContextProps, onChangeArgs } from '../interfaces';
 import styles from '../styles/styles.module.css';
 import { ProductImage } from './ProductImage';
 
 export interface Props {
   product: Product;
   // children?: ReactElement | ReactElement[];
-  children: (args : ProductCartHandlers) => JSX.Element;
+  children: (args : ProductCardHandlers) => JSX.Element;
   className?: string;
   style?: React.CSSProperties;
   onChange?: ( args: onChangeArgs ) => void;
@@ -20,7 +20,7 @@ export const ProductContext = createContext({} as ProductContextProps );
 
 export const {Provider} = ProductContext;
 
-export const ProductCart = ({ children, product, className, style, value, onChange, initialValues }: Props) => {
+export const ProductCard = ({ children, product, className, style, value, onChange, initialValues }: Props) => {
 
   const {
     counter,
